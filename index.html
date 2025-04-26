@@ -177,34 +177,38 @@
     <!-- Подкатегории для Кухни -->
     <div id="kitchen" class="sub-menu">
         <div class="sub-tab" onclick="showSubSubMenu('brisket')">Барбекю</div>
-        <div class="sub-tab" onclick="showSubSubMenu('salats')">Салаты</div>
+        <div class="sub-tab" onclick="showSubSubMenu('grill-menu')">Гриль-меню</div>
+        <div class="sub-tab" onclick="showSubSubMenu('first course')">Первые блюда</div>
+        <div class="sub-tab" onclick="showSubSubMenu('second course')">Вторые блюда</div>        
+        <div class="sub-tab" onclick="showSubSubMenu('bbq')">Шашлыки</div>
+        <div class="sub-tab" onclick="showSubSubMenu('pizza')">Пицца</div>
+        <div class="sub-tab" onclick="showSubSubMenu('pasta')">Паста</div>
         <div class="sub-tab" onclick="showSubSubMenu('cold snacks')">Холодные Закуски</div>
         <div class="sub-tab" onclick="showSubSubMenu('hot snacks')">Горячие Закуски</div>
-        <div class="sub-tab" onclick="showSubSubMenu('grill-menu')">Гриль-меню</div>
-        <div class="sub-tab" onclick="showSubSubMenu('bbq')">Шашлыки</div>
-        <div class="sub-tab" onclick="showSubSubMenu('souce')">Соусы</div>
-        <div class="sub-tab" onclick="showSubSubMenu('pizza')">Пицца</div>
-        <div class="sub-tab" onclick="showSubSubMenu('hachapuri')">Хачапури</div>
-        <div class="sub-tab" onclick="showSubSubMenu('first course')">Первые блюда</div>
-        <div class="sub-tab" onclick="showSubSubMenu('second course')">Вторые блюда</div>
+        <div class="sub-tab" onclick="showSubSubMenu('salats')">Салаты</div> 
         <div class="sub-tab" onclick="showSubSubMenu('garniers')">Гарниры</div>
-        <div class="sub-tab" onclick="showSubSubMenu('pasta')">Паста</div>
+        <div class="sub-tab" onclick="showSubSubMenu('souce')">Соусы</div>
         <div class="sub-tab" onclick="showSubSubMenu('desserts')">Десерты</div>
         <div class="sub-tab" onclick="showSubSubMenu('banket source')">Банкетные блюда</div>
     </div>
 
     <!-- Подкатегории для Бара -->
     <div id="bar" class="sub-menu">
+        <div class="sub-tab" onclick="showSubSubMenu('beer')">Пиво</div>
+        <div class="sub-tab" onclick="showSubSubMenu('beer snacks')">Закуски к пиву</div>
         <div class="sub-tab" onclick="showSubSubMenu('cocktails')">Коктейли</div>
         <div class="sub-tab" onclick="showSubSubMenu('wines')">Вина</div>
         <div class="sub-tab" onclick="showSubSubMenu('vodka')">Водка</div>
         <div class="sub-tab" onclick="showSubSubMenu('viski')">Виски</div>
+        <div class="sub-tab" onclick="showMenu('rom')">Ром</div>
         <div class="sub-tab" onclick="showSubSubMenu('tequila')">Текила</div>
-        <div class="sub-tab" onclick="showSubSubMenu('rom')">Ром</div>
         <div class="sub-tab" onclick="showSubSubMenu('congac')">Коньяк</div>
         <div class="sub-tab" onclick="showSubSubMenu('drinks')">Напитки</div>
         <div class="sub-tab" onclick="showSubSubMenu('tea')">Чай</div>
         <div class="sub-tab" onclick="showSubSubMenu('lemonads')">Лимонады</div>
+        <div class="sub-tab" onclick="showMenu('energetik')">Энергетики</div>
+        <div class="sub-tab" onclick="showMenu('lighter')">Зажигалка</div>
+        
     </div>
 
     <!-- Внутренние вкладки -->
@@ -222,7 +226,6 @@
     <div id="banket source" class="menu"></div>
     <div id="garniers" class="menu"></div>
     <div id="souce" class="menu"></div>
-    <div id="hachapuri" class="menu"></div>
     <div id="drinks" class="menu"></div>
     <div id="lemonads" class="menu"></div>
     <div id="tea" class="menu"></div>
@@ -231,8 +234,13 @@
     <div id="congac" class="menu"></div>
     <div id="viski" class="menu"></div>
     <div id="tequila" class="menu"></div>
-    <div id="rom" class="menu"></div>
     <div id="wines" class="menu"></div>
+    <div id="beer" class="menu"></div>
+    <div id="beer snacks" class="menu"></div>
+    <div id="energetik" class="menu"></div>
+    <div id="rom" class="menu"></div>
+    <div id="lighter" class="menu"></div>
+
 
    
    
@@ -313,150 +321,177 @@
 
 
         // Добавляем блюда
-         addDish("grill-menu", "Стейк Рибай", "Говядина, картофельные дольки, чесночный соус", "4500₸", "https://i.postimg.cc/66mLsMKn/T5A9702.jpg");
-        addDish("grill-menu", "Медальоны с грибным соусом", "Говядина, шампиньоны, грибной соус", "4200₸", "https://cdn-kz3.foodpicasso.com/assets/2023/09/02/c3013cc…---jpg_1000x_103c0_convert.jpg");
-        addDish("grill-menu", "Стейк из конины", "", "4800₸", "ссылка на фото");
-        addDish("grill-menu", "Сливочная Сёмга", "", "5200₸", "ссылка на фото");
-        addDish("grill-menu", "Цыпленок табака", "", "3400₸", "ссылка на фото");
-        addDish("cold snacks", "Мясное ассорти", "", "6800₸", "ссылка на фото");
+         addDish("grill-menu", "Стейк Рибай", "Говядина, картофельные дольки, чесночный соус", "5990₸", "https://i.postimg.cc/66mLsMKn/T5A9702.jpg");
+        addDish("grill-menu", "Медальоны с грибным соусом", "Говядина, шампиньоны, грибной соус", "5590₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/sNayH2TU74j2GIxR9DotF-ZqULBw6SLQ/7wIbxAB5VSty95lPc1HR8b77XASAIju5/TFvOX9JeamBzWSFzGL0TUDQdWTDRl3J2/GopW9p5sUuE.jpg");
+        addDish("grill-menu", "Стейк из конины", "", "5990₸", "ссылка на фото");
+        addDish("grill-menu", "Сливочная Сёмга", "", "5890₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/Fcx3r1IArXk0XcSk-hp953gCV6Vvsw4J/F8oUf9RSedLSO6GeD3tSw8SCVJ5B01bJ/KMJ09yNN5-KAZHYKErf37KErDJIXNYgE/O5EOgUSjNTw.jpg");
+        addDish("grill-menu", "Цыпленок табака", "", "4200₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/AbUiSbt2hByrC6JcUqVj4F_z2naV1DLO/CFNVgjOzU-1VMWlwAyj6-M39HMVRTmVV/gBwHdmx_iHExMOhzR3wSfc2DCyAY2rrL/2E9tMcMvoIc.jpg");
+        addDish("cold snacks", "Мясное ассорти", "", "7200₸", "ссылка на фото");
         addDish("cold snacks", "Кавказская нарезка", "", "3400₸", "https://i.postimg.cc/MKQPvX8r/T5A9578.jpg");
-        addDish("cold snacks", "Куриное ассорти", "", "6200₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/tPF0SQbCJaen4Fju3WRCJKR2sFZKkAD2/GbV9NzypHFsR-JW_JEs1VrQUF8o9Orid/UM6FehTzh5y7hGPZBE8SejGQHi01KkHc/z0_4jmHxTmY.jpg");
-        addDish("cold snacks", "Русская закуска", "", "2000₸", "ссылка на фото");
-        addDish("cold snacks", "Брускетты с семгой", "", "1700₸", "ссылка на фото");
-        addDish("cold snacks", "Брускетты с креветками", "", "1700₸", "ссылка на фото");
-        addDish("cold snacks", "Домашние соленья", "", "1800₸", "https://i.postimg.cc/gcTBtBhC/T5A9654.jpg");
-        addDish("cold snacks", "Фруктовая нарезка", "", "3800₸", "ссылка на фото");
-        addDish("salats", "Апельсиновый шериф", "Микс салата, рукколла, свёкла, апельсин, креметта, соус медово-лаймовый", "1800₸", "https://i.postimg.cc/KvV6zXXN/T5A9672.jpg");
-        addDish("salats", "Don Quixote", "Кур.филе, брокколи, цвет.капуста, микс салата, черри, сливочный соус", "2200₸", "https://i.postimg.cc/DwnGF7kR/T5A9618.jpg");
-        addDish("salats", "Ранчо микс", "", "1800₸", "ссылка на фото");
-        addDish("salats", "Ачичук", "", "900₸", "ссылка на фото");
-        addDish("salats", "Салат с хрустящей курочкой", "Огурец, помидоры, айсберг, микс салата, курица в кляре, соевая заправка", "1800₸", "ссылка на фото");
-        addDish("salats", "Техасский ранч", "", "1800₸", "ссылка на фото");
-        addDish("salats", "Греческий салат", "Помидоры,Огурцы,Микс салата,Маслины,Брынза,Маслины,Олив.масло", "1800₸", "ссылка на фото");
-        addDish("salats", "Тайский", "", "1800₸", "ссылка на фото");
-        addDish("salats", "Баклажановый хруст", "Кар.филе,Соус свидчили,Баклажаны,Черри", "2200₸", "ссылка на фото");
-        addDish("salats", "Цезарь с курицей", "Айсберг,Кур.филе,Переп.яйцо,Черри,Сметанко-сливочный соус,Пармезан сыр", "1800₸", "ссылка на фото");
-        addDish("salats", "Цезарь с креветками", "", "2600₸", "ссылка на фото");
-        addDish("salats", "Мужской каприз", "Гов.мясо,Яйцо,Солёные огурец,Картофель,Гауда сыр,Майонез", "1600₸", "ссылка на фото");
-        addDish("salats", "Летний микс", "", "1100₸", "ссылка на фото");
-        addDish("salats", "Гурме с креветками", "", "2900₸", "ссылка на фото");
-        addDish("salats", "Селедка под шубой", "", "1600₸", "ссылка на фото");
-        addDish("salats", "Оливье", "", "1500₸", "ссылка на фото");
-        addDish("bbq", "Говядина", "", "2450₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/ntW5onWeAj60oaGjPmYXzaUoO9VrA0EJ/zOWC66Bo4An3QH5D83JNlfPsbbVo40Zp/alnwmBmyNlQ7jCJ5s-Iulp6L4R3xEy8o/XCijDHaTiro.jpg");
-        addDish("bbq", "Крылышки", "", "1700₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/04DV9QIGw_az4SChL12mef5M2_gDgh79/W7Ab-HTp152eRIjtHVPFNdyDoG1kebwg/wPcYm0mvB6sx1sxdCgZvQ3UtC_bCowa2/0b8bfAM18vQ.jpg");
-        addDish("bbq", "Фарш мастер", "", "1900₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/wzET257pluU7k3UKKpdMIydm_PNu-eoy/EW52Sy0wYox47hS6rZneQ7Vm9YroyF6h/4mWCQbP50yiv_nt2DBcU8MCD-Efc26lC/NN4-jGRAqQk.jpg");
+        addDish("cold snacks", "Куриное ассорти", "", "6500₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/tPF0SQbCJaen4Fju3WRCJKR2sFZKkAD2/GbV9NzypHFsR-JW_JEs1VrQUF8o9Orid/UM6FehTzh5y7hGPZBE8SejGQHi01KkHc/z0_4jmHxTmY.jpg");
+        addDish("cold snacks", "Русская закуска", "", "2300₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/aNsPs1SuTctn9XaF_3uACU-vaN6u1yBD/PXQnB-kuyqb99IsiZ20JTkN0JpDQ9ZVC/JEADYP-RpThCm_XmE-JgfcZStVkTzWbK/-W6AipuzaB8.jpg");
+        addDish("cold snacks", "Брускетты с семгой", "", "2100₸", "ссылка на фото");
+        addDish("cold snacks", "Брускетты с креветками", "", "2100₸", "ссылка на фото");
+        addDish("cold snacks", "Домашние соленья", "", "2400₸", "https://i.postimg.cc/gcTBtBhC/T5A9654.jpg");
+        addDish("cold snacks", "Фруктовая нарезка", "", "4200₸", "ссылка на фото");
+        addDish("salats", "Апельсиновый шериф", "Микс салата, рукколла, свёкла, апельсин, креметта, соус медово-лаймовый", "2600₸", "https://i.postimg.cc/KvV6zXXN/T5A9672.jpg");
+        addDish("salats", "Бомонт", "Кур.филе, брокколи, цвет.капуста, микс салата, черри, сливочный соус", "2300₸", "https://i.postimg.cc/DwnGF7kR/T5A9618.jpg");
+        addDish("salats", "Ранчо микс", "Яйцо, кукуруза,помидор, огурец,древесный гриб,картофель пай,майонез", "2300₸", "ссылка на фото");
+        addDish("salats", "Ачичук", "", "1200₸", "ссылка на фото");
+        addDish("salats", "Салат с хрустящей курочкой", "курица в кляреогурец, помидор,салат Айсберг,микс салата, соевая заправка", "2300₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSVASfqwBllKJ/zEiDa2YNgC_QUAZ62EEPl9upxJuuHvMg/ddf8qaXcchLZpbjVOSNifEh0VUV3CvlL/LmxDpiWD__4eJg_qiHWH1_OtPiJmzxst/XLhXnZItTinpl1T2xmAhwvu6NVKxaUVu/rUKD_B4jKxOwFKNhvIqOx3JL0KTB0f9E/TNBC_bf-T70HMQ4rcqvPbXzo9OZgc2CG/6ZZldJBMY7Dw9ffydBga0xaWafEyYhPJ/WOIodHolSrAOfHxfe_6G634MW4FQLz_L/7xqGx1JYcDOaHnVEnYB6oYNTyrUJP7xv/KAsbbqE3MeLf7KtfYQTS54vRsmmewNLn/qc0nymNCxU_c7GjkQB5vicrpyQ8JvI56/_-kxmn-AnsnS_ld88z-rJ_K9h35pa-s-/iLv9mjZKHDLB5zpimDqXmohSaT265A4r/pwMRxZIrFqvGee50UoHcyaEoiaJVoDZ5/Q2NP-UT6V2Hi-Up2aqjqk7jpMNzkpLBV/aFW_cUSupdrtykFw5ZorcprdhMuhh9tt/Fz6wgyXUOhr0m-qylmjrGluQSB7dSfCy/kJHt_EsigmSTAV8H13XCFA.jpg");
+        addDish("salats", "Техасский ранч", "Копченая говядина,соленый огурец, сыр Гауда,древесный гриб, яйцо,микс салата, майонез", "2300₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/lN3_0OxtzYBIRkfMd9OIkgP4RoKlBb-U/7P39otqcDQkl7oJA7JwiFPPp5zKfemFx/VY7YVXAQzBgIVjO5qwr9OWMPBtQ7bdP4/owH7315ht4w.jpg");
+        addDish("salats", "Греческий салат", "Помидоры,Огурцы,Микс салата,Маслины,Брынза,Маслины,Олив.масло", "2000₸", "ссылка на фото");
+        addDish("salats", "Тайский", "", "2300₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/UVD5mAX_rJ29hNeCvdt17rJ2siHh8dSO/P6J-Sek9krTqVkZzzHkCj2R5l4EkSF2X/nDtcao0jt_uq-7OeQdDYE1Bipt--d3xW/kIE4nlI_Tzg.jpg");
+        addDish("salats", "Баклажановый хруст", "Баклажан, соусsweetchile, филе куриное,помидор Черри", "2700₸", "ссылка на фото");
+        addDish("salats", "Цезарь с курицей", "Айсберг,Кур.филе,Переп.яйцо,Черри,Сметанко-сливочный соус,Пармезан сыр", "2300₸", "ссылка на фото");
+        addDish("salats", "Мужской каприз", "Гов.мясо,Яйцо,Солёные огурец,Картофель,Гауда сыр,Майонез", "2200₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/CLuJFsc13qUy_xB4d_c1hk2ULxC-R3VM/kubixT7YkScHvCcGbRtLT0k0ZzMKskQg/BVgJBJyC3kUivSlWuZpCaAqoI8u1VDlG/RobObeWaO6E.jpg");
+        addDish("salats", "Летний микс", "", "2200₸", "");
+        addDish("salats", "Летний бриз", "", "2300₸", "ссылка на фото");
+        addDish("salats", "Гурме с креветками", "", "2900₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/LBurCaNXkXeYzdzWw0pl91Db9_4ADWHG/fdEHv9G4J3_Vk4cD36yZSxagZsC5s6ho/v5D1cG-CMepy0oxFA940sGMnBSdlrzhM/bWnZyXycC38.jpg");
+        addDish("salats", "Селедка под шубой", "Сезенное!", "2200₸", "ссылка на фото");
+        addDish("salats", "Оливье", "Сезонное!", "2200₸", "ссылка на фото");
+        addDish("bbq", "Говядина", "", "2650₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/ntW5onWeAj60oaGjPmYXzaUoO9VrA0EJ/zOWC66Bo4An3QH5D83JNlfPsbbVo40Zp/alnwmBmyNlQ7jCJ5s-Iulp6L4R3xEy8o/XCijDHaTiro.jpg");
+        addDish("bbq", "Крылышки", "", "2300₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/04DV9QIGw_az4SChL12mef5M2_gDgh79/W7Ab-HTp152eRIjtHVPFNdyDoG1kebwg/wPcYm0mvB6sx1sxdCgZvQ3UtC_bCowa2/0b8bfAM18vQ.jpg");
+        addDish("bbq", "Фарш мастер", "", "2300₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/wzET257pluU7k3UKKpdMIydm_PNu-eoy/EW52Sy0wYox47hS6rZneQ7Vm9YroyF6h/4mWCQbP50yiv_nt2DBcU8MCD-Efc26lC/NN4-jGRAqQk.jpg");
         addDish("bbq", "Баранина", "", "2650₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/sZmg6XxdyDebJFjvgzBdAHPRci_pLe0t/3lc86yVH-5_HcseFZ8RedQKKW7LATsTc/VDcyR6fC0n19sOq_IczuHW8HtEBFMdXN/BQFdjS2BOjo.jpg");
+        addDish("bbq", "Антрикот Баранина", "", "2850₸", "ссылка на фото");
         addDish("bbq", "Овощной", "", "2000₸", "ссылка на фото");
-        addDish("bbq", "Рулет в сетке", "", "1900₸", "ссылка на фото");
-        addDish("pizza", "Чили-чикен", "куриное филе, светофор, помидор, кукуруза, халапеньо, сыр", "2600₸", "https://i.postimg.cc/VvgT96Ny/T5A9848.jpg");
-        addDish("pizza", "Милано", "куриное филе, шампиньоны, сливки, сыр", "2300₸", "ссылка на фото");
-        addDish("pizza", "Сырный рай", "казы, жая, сыр", "2700₸", "https://i.postimg.cc/FsF7gBK3/T5A9883.jpg");
+        addDish("pizza", "Чили-чикен", "куриное филе, светофор, помидор, кукуруза, халапеньо, сыр", "2800₸", "https://i.postimg.cc/VvgT96Ny/T5A9848.jpg");
+        addDish("pizza", "Милано", "куриное филе, шампиньоны, сливки, сыр", "2500₸", "ссылка на фото");
+        addDish("pizza", "Сырный рай", "", "2800₸", "https://i.postimg.cc/FsF7gBK3/T5A9883.jpg");
         addDish("pizza", "Болоньезе", "говяжья вырезка, черри, рукола, чипсы, соус терияки, сыр", "2300₸", "ссылка на фото");
-        addDish("pizza", "Маргарита", "помидоры, сыр", "1900₸", "ссылка на фото");
-        addDish("pizza", "Пеперони", "салями, сыр", "2200₸", "ссылка на фото");
-        addDish("first course", "Рамён", "", "2400₸", "https://i.postimg.cc/4dL8Sts5/T5A9755.jpg");
-        addDish("first course", "Суп Том Ям", "", "2950₸", "ссылка на фото");
-        addDish("first course", "Шурпа из говядины", "", "1350₸", "ссылка на фото");
-        addDish("first course", "Кукси", "Горячий, холодный", "1500₸", "ссылка на фото");
-        addDish("first course", "Пельмени по домашнему", "", "1150₸", "ссылка на фото");
-        addDish("first course", "Окрошка", "", "1150₸", "ссылка на фото");
-        addDish("first course", "Солянка из копченностей", "", "1450₸", "ссылка на фото");
-        addDish("first course", "Суп лапша с фрикадельками", "", "950₸", "ссылка на фото");
-        addDish("first course", "Сырный суп", "", "1350₸", "ссылка на фото");
-        addDish("first course", "Крем-суп из чечевицы", "", "950₸", "ссылка на фото");
-        addDish("pasta", "Фетуччини", "паста Фетучини, куриное филе, шампиньоны, сливки", "2800₸", "ссылка на фото");
-        addDish("pasta", "Болоньезе", "соус Болоньезе, спагетти", "2400₸", "ссылка на фото");
-        addDish("pasta", "Зеленый бриз", "паста Фетучини, семга, шпинат, сливки", "3400₸", "https://i.postimg.cc/3RW30XR5/T5A9906.jpg");
-        addDish("hot snacks", "Сырные палочки", "", "1500₸", "ссылка на фото");
-        addDish("hot snacks", "Пряная курочка", "Куриное филе, соус терияки, соус свит Чили", "2800₸", "ссылка на фото");
-        addDish("hot snacks", "Крылья Техас", "Куриные крылья, хрустящая панировка, соус чесночный, соус красный", "2500₸", "ссылка на фото");
-        addDish("hot snacks", "Ассорти гриль", "Колбаски: говядина, баранина, конина, курица, картофель по домашнему, соус красный, чесночный, горчица, гарлики", "5800₸", "ссылка на фото");
-        addDish("garniers", "Рис с овощами", "", "550₸", "https://i.postimg.cc/xCG7xBhv/T5A9714.jpg");
-        addDish("garniers", "Фри", "", "650₸", "ссылка на фото");
-        addDish("garniers", "Белый рис", "", "500₸", "ссылка на фото");
-        addDish("garniers", "Овощи на гриле", "", "1650₸", "https://i.postimg.cc/Ss6NhWgW/T5A9796.jpg");
-        addDish("garniers", "Картофельные дольки", "", "650₸", "ссылка на фото");
-        addDish("souce", "Сметана", "", "300₸", "ссылка на фото");
-        addDish("souce", "Сузьма", "", "300₸", "ссылка на фото");
-        addDish("souce", "Кетчуп", "", "300₸", "ссылка на фото");
-        addDish("souce", "Чесночный", "", "300₸", "ссылка на фото");
-        addDish("souce", "BBQ Соус", "", "300₸", "ссылка на фото");
-        addDish("souce", "Шашлычный", "", "300₸", "ссылка на фото");
-        addDish("second course", "Сливочная курочка", "", "3000₸", "ссылка на фото");
-        addDish("second course", "Нежное мясо с грибами", "", "3500₸", "ссылка на фото");
-        addDish("second course", "Телятина с овощами", "", "3500₸", "ссылка на фото");
+        addDish("pizza", "Маргарита", "помидоры, сыр", "2300₸", "ссылка на фото");
+        addDish("pizza", "Пеперони", "салями, сыр", "2500₸", "ссылка на фото");
+        addDish("first course", "Рамён", "", "2600₸", "https://i.postimg.cc/4dL8Sts5/T5A9755.jpg");
+        addDish("first course", "Суп Том Ям", "", "3200₸", "ссылка на фото");
+        addDish("first course", "Шорпа", "", "1800₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/AmHRDdTX6-R6lfiOKsfsUt1mqiZtkH99/5VPNhgCD6S33VC-hmWMBhlXrU2aBsvB4/YI_qQT54zZGzBo6LhFWrefRAtfbry-bc/qVcKN0FtNYg.jpg");
+        addDish("first course", "Кукси", "Горячий, холодный", "1800₸", "ссылка на фото");
+        addDish("first course", "Пельмени по домашнему", "", "1600₸", "ссылка на фото");
+        addDish("first course", "Окрошка", "Сезонное!", "1600₸", "ссылка на фото");
+        addDish("first course", "Солянка из копченностей", "", "2600₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/NppTvn-6Qm8uztGZ7RyaBEw0x_Kc_R0H/v0aEzbL6r_1xxhN9SXLyC0JhxKNjLZQs/laN4veZb1FDXpgrVhlY6YMCsiS_XHbE2/KMrp-MvYE_8.jpg");
+        addDish("first course", "Лапша с фрикадельками", "", "1600₸", "ссылка на фото");
+        addDish("first course", "Сырный суп", "", "1800₸", "ссылка на фото");
+        addDish("first course", "Крем-суп из чечевицы", "", "1600₸", "ссылка на фото");
+        addDish("pasta", "Альфредо", "паста Фетучини, куриное филе, шампиньоны, сливки", "2800₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/WeVWAVGI7pkctGcfHJDCI5hKBCtIc-h6/icOVa5VwjoazxLOMKMvmIROdUP43M2ol/xWewwkUena3bQh6LAk2S-_wsnx0ijLCH/xzHRqi8lRbU.jpg");
+        addDish("pasta", "Болоньезе", "соус Болоньезе, спагетти", "2400₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/MKItv-uR-Cf6BLO6KcY6XT9bcIO0a8nd/FdrMhv36K_KeMWKueTyNhClc4hzS3CIS/gMVpEPWfUOOgkr9IrO-Low13IByZ9e_h/7ZmA_cUGwSM.jpg");
+        addDish("pasta", "Фетуччини с семгой", "паста Фетучини, семга, шпинат, сливки", "3400₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/1RECwcrUWmobTD2-_GixKERt3P88md8D/DhUHPxSZBHVRS2F5N_uPS1caQHvsecoM/rVZrgtB10eZ053jeWNtt7xUK_-MtWNRK/ILFJwAARXo8.jpg");
+        addDish("hot snacks", "Сырные палочки", "", "1800₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/rPsP4vHbst7P-eD0sF0VPs_OEsVo6smX/57ykxvfo3z7na8aJsaqEz6ONdMLRg5kY/VzjRgkU17iLdwtZ_ooIz-AtaS91kbATz/UwfwU48vhac.jpg");
+        addDish("hot snacks", "Пряная курочка", "Куриное филе, соус терияки, соус sweetchile", "3100₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/UVD5mAX_rJ29hNeCvdt17rJ2siHh8dSO/P6J-Sek9krTqVkZzzHkCj2R5l4EkSF2X/nDtcao0jt_uq-7OeQdDYE1Bipt--d3xW/kIE4nlI_Tzg.jpg");
+        addDish("hot snacks", "Крылья Техас", "Куриные крылья, хрустящая панировка, соус чесночный, соус красный", "2800₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/p_HL5joGooN0joBSNLeU-c9K8AuhePW8/qck7iDl4loflDAJWyKaI1NFLKFSNdAOX/WSKSq_LiujWv7_DvKE2XkjtRdNJKGw2i/-D-GjhT_rnM.jpg");
+        addDish("hot snacks", "Ассорти гриль колбасок", "Колбаски: говядина, баранина, конина, курица, картофель по домашнему, соус красный, чесночный, горчица, гарлики", "5800₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/PgWORZbIjwTWxQrFEina6cNFjrcLjR71/gn8ci3BNzhmYRWZOXSwNAc6mGvHuyuck/RVvOuKdEk0iVDQnoFKi-HSuyTVIVkb-4/GjvtwlR3cpU.jpg");
+        addDish("garniers", "Рис с овощами", "", "750₸", "https://i.postimg.cc/xCG7xBhv/T5A9714.jpg");
+        addDish("garniers", "Фри", "", "800₸", "ссылка на фото");
+        addDish("garniers", "Белый рис", "", "700₸", "ссылка на фото");
+        addDish("garniers", "Овощи на гриле", "", "1850₸", "https://i.postimg.cc/Ss6NhWgW/T5A9796.jpg");
+        addDish("garniers", "Чесночный хлеб", "", "600₸", "ссылка на фото");
+        addDish("garniers", "Хлебная корзина", "", "700₸", "ссылка на фото");
+        addDish("garniers", "Картофельные дольки", "", "800₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/s_w-iSZ6WhYBmRG6M99UbVc9DFHhVZni/E00AC6CixohyUjX_vsRmFenN5G7tkAxc/8-P3A3mGpb7AhKAtWMK5g7Q2q9kUDzGF/4l2D76YXiME.jpg");
+        addDish("souce", "Сметана", "", "350₸", "ссылка на фото");
+        addDish("souce", "Сузьма", "", "350₸", "ссылка на фото");
+        addDish("souce", "Кетчуп", "", "350₸", "ссылка на фото");
+        addDish("souce", "Чесночный", "", "350₸", "ссылка на фото");
+        addDish("souce", "BBQ Соус", "", "350₸", "ссылка на фото");
+        addDish("souce", "Шашлычный", "", "350₸", "ссылка на фото");
+        addDish("second course", "Сливочная курочка", "(куриное филе, шампиньоны,сливки, лук репчатый, гарнир рис", "3000₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/-xriTkA3jILjMeREb_tMPz-30vebe8RM/6XYkX0XE4mUBmhOICq6HPplgDGKTbwy7/32dM97TfdjPbjyTNiB04YPiZEtnBaMTH/CIMzUV5fKxc.jpg");
+        addDish("second course", "Нежное мясо с грибами", "Говядина, грибы шампиньоны,лук репчатый, сливки", "3500₸", "ссылка на фото");
+        addDish("second course", "Телятина с овощами", "Говядина, лук шалот, баклажан,кабачки, перец болгарский сладкий,черри, соевый соус, сливки", "3500₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/PQZa-IGSWi1aj6IB1bFoenu3rPcy8yY5/P276VXIBwcrr7cpMURlT0e-v9xYBcMhK/kFK98o35CKrHxHO0EL49q6SxzLPFQG5r/jhH3IHHSBIQ.jpg");
         addDish("second course", "Мясо по деревенски", "Говядина, шампиньоны, лук репчатый, картофель, сливки, чеснок", "3500₸", "https://i.postimg.cc/Z5YFNnrF/T5A9835.jpg");
-        addDish("second course", "Don Quixote", "Куриное филе, сыр, копченое мясо, сливочный соус, овощи", "3500₸", "https://i.postimg.cc/zBtKnY1t/T5A9741.jpg");
-        addDish("second course", "Мясо по тайски", "Говядина, сладкий болгарский перец, свежий огурец, репчатый лук, соевый соус, кунжут, чеснок , перец Чили , рис", "3500₸", "ссылка на фото");
+        addDish("second course", "Кордон Блю", "Куриное филе, сыр, копченое мясо, сливочный соус, овощи", "3500₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/PN0kn9hpZuEUcfRobIg1rX9w5YVpy2Ej/eTPQEaK3GI7GKJjWkQVue-esHcqO8e7Z/izbxnuDIbjQ_C_sXpdbU4sOPoTg5BpGL/a2lXXRZJc3Y.jpg");
+        addDish("second course", "Мясо по тайски", "Говядина, сладкий болгарский перец, свежий огурец, репчатый лук, соевый соус, кунжут, чеснок , перец Чили , рис", "3000₸", "ссылка на фото");
         addDish("second course", "Жульен", "Куриное филе, грибы, репчатый лук,   сыр, сливки , чеснок", "2200₸", "ссылка на фото");
-        addDish("banket source", "Бешбармак", "", "10500₸", "ссылка на фото");
-        addDish("banket source", "Веллингтон", "Говядина запечённая в слоеном тесте, овощи брокколи , черри, шампиньоны, дунганский перец, соус красный и горчица", "12500₸", "ссылка на фото");
-        addDish("banket source", "Шеф-гриль", "Цыпленок тапака, стейк рибай из конины, стейк рибай из говядины, куриные крылышки и бедра, люля, колбаска улитка, соус красный , соус чесночный, картофель по домашнему", "22500₸", "ссылка на фото");
-        addDish("banket source", "Мясной пир", "2 табака, 1 стейк конина, 2 стейка говядина), баранина, крылышки, колбаски, картофельные дольки, охотничьи колбаски, запеченные овощи, соус", "41500₸", "ссылка на фото");
-        addDish("banket source", "Казан-кебаб", "", "₸", "ссылка на фото");
-        addDish("hachapuri", "Хачапури по-Мегрельски", "", "2800₸", "ссылка на фото");
-        addDish("hachapuri", "Хачапури по-Аджарски", "", "2200₸", "ссылка на фото");
-        addDish("brisket", "Брискет", "", "2450₸", "ссылка на фото");
-        addDish("brisket", "Ребрышки", "", "2450₸", "ссылка на фото");
+        addDish("banket source", "Бешбармак", "", "12500₸", "ссылка на фото");
+        addDish("banket source", "Веллингтон", "Говядина запечённая в слоеном тесте, овощи брокколи , черри, шампиньоны, дунганский перец, соус красный и горчица", "14500₸", "ссылка на фото");
+        addDish("banket source", "Шеф-гриль", "Цыпленок тапака, стейк рибай из конины, стейк рибай из говядины, куриные крылышки и бедра, люля, колбаска улитка, соус красный , соус чесночный, картофель по домашнему", "24500₸", "ссылка на фото");
+        addDish("banket source", "Мясной пир", "2 табака, 1 стейк конина, 2 стейка говядина), баранина, крылышки, колбаски, картофельные дольки, охотничьи колбаски, запеченные овощи, соус", "45500₸", "ссылка на фото");
+        addDish("banket source", "Казан-кебаб", "", "14800₸", "ссылка на фото");
+        addDish("pizza", "Хачапури по-Мегрельски", "", "3100₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/2_PxPEDYbTXsDYe6n5kYEcV6QHLmNKNq/40j21ULAcyw22dikLpZnxqO852OUuQ_D/ONlikXgzhhKfEtEtzW_n00Qq3QU9cKnh/e8uygYk_M_c.jpg");
+        addDish("pizza", "Хачапури по-Аджарски", "", "2700₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/vYN6ThnVVdEdpw0ydVPmQX6S4ZULlRsj/nN6bwUjs_k4hOtf662DA02RlsI3bwjpt/Io0TV6RE7gDMq3ghjlNUHFpv4sOEfxHU/D6NMi-YOis8.jpg");
+        addDish("brisket", "Брискет", "", "2450₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/rkdpDC514TxyWKUpOdC_hboYrasN5HnK/11UObPWqH4ofkJxHtbPiCS3UShvPNGwj/fpo0Gb-6Bv0nipX1I3qM5o89MELPCa8k/UvgGppdhQf0.jpg");
+        addDish("brisket", "Ребрышки", "", "2450₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/5D8EhrUarzaxeljEdEvZG0mJD8_MNmgp/8EtbR9_yscZSdc-qwl5k-frp2WISXSZ7/u0T2qUqoD4u5-Nogsmsvv8gDyHS3IvCK/cEqLLl5XREc.jpg");
         addDish("brisket", "Крылышки", "", "2450₸", "ссылка на фото");
-        addDish("desserts", "Шоколадный фондан", "", "₸", "ссылка на фото");
-        addDish("desserts", "Штрудель с ягодами", "", "₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/HgyljCHGtSthUVwPpLd9x25jD0Aws_mZ/RY5IpFVnzfklTTdYycViziGYLNlWTvuE/vFENrNlublp_JGeSvEU7Mh4x47t70sg7/kvwkPZFSTSY.jpg");
+        addDish("desserts", "Шоколадный фондан", "", "1800₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/P_ljR2UngPYGQTnwzUoGIH2k_QcjEpV3/rLSaLoPvcH3H3qgh6uD0aGhHJIG0bffV/TFL6mGK5xyruc1RYQ9ZsEEDEiVFUAkya/zu19Qg3FiuE.jpg");
+        addDish("desserts", "Штрудель с ягодами", "", "2800₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/HgyljCHGtSthUVwPpLd9x25jD0Aws_mZ/RY5IpFVnzfklTTdYycViziGYLNlWTvuE/vFENrNlublp_JGeSvEU7Mh4x47t70sg7/kvwkPZFSTSY.jpg");
+        addDish("desserts", "Мороженое", "", "1500₸", "");
+        addDish("desserts", "Шоколад Казахстан", "", "1000₸", "");
+        addDish("desserts", "Мёд", "50гр", "500₸", "");
+        addDish("desserts", "Лимон", "", "500₸", "");
         
 
         // Добавляем напитки
-        addDish("drinks", "Вода Tassay", "", "1л 700₸", "ссылка на фото");
-        addDish("drinks", "Компот домашний", "", "1л 1500₸", "ссылка на фото");
-        addDish("drinks", "Coca-Cola/Fanta/Sprite", "", "1л 800₸", "ссылка на фото");
-        addDish("drinks", "Coca-Cola(Баночная)", "", "0,5л 600₸", "ссылка на фото");
-        addDish("drinks", "Coca-Cola", "", "0,25л 500₸", "ссылка на фото");
-        addDish("drinks", "Cок Piko", "", "1л 900₸", "ссылка на фото");
-        addDish("lemonads", "Киви-Лайм", "", "1л 1800₸", "ссылка на фото");
-        addDish("lemonads", "Манго-Маракуйя", "", "1л 1800₸", "ссылка на фото");
-        addDish("lemonads", "Манго-Ананас", "", "1л 1800₸", "ссылка на фото");
-        addDish("lemonads", "Лесные  ягоды", "", "1л 1800₸", "ссылка на фото");
-        addDish("tea", "Чай черный", "", "0,9л 500₸", "ссылка на фото");
-        addDish("tea", "Чай зелёный", "", "0,9л 500₸", "ссылка на фото");
+        addDish("drinks", "Вода Tassay", "", "1л 750₸", "https://img.oe.kz/bitrix-catalog/40523/1720313211-rnr0uwlds1qn57adptcabs02d3z05nxz.jpg");
+        addDish("drinks", "Компот домашний", "", "1л 1600₸", "ссылка на фото");
+        addDish("drinks", "Вода NI Water", "", "1л 500₸", "ссылка на фото");
+        addDish("drinks", "Coca-Cola/Fanta/Sprite", "", "1л 850₸", "https://static.insales-cdn.com/images/products/1/3472/301460880/%D0%9A%D0%BE%D0%BB%D0%B0_1_%D0%BB.jpg");
+        addDish("drinks", "Coca-Cola", "", "450мл 650₸", "https://st2.depositphotos.com/1050070/9344/i/950/depositphotos_93445864-stock-photo-coca-cola-can-on-white.jpg");
+        addDish("drinks", "Coca-Cola", "", "0,25л 600₸", "https://grizly.club/uploads/posts/2023-08/1691316175_grizly-club-p-kartinki-kola-bez-fona-14.jpg");
+        addDish("drinks", "Cок Piko", "", "1л 1050₸", "https://static.insales-cdn.com/r/j8ya4K8rPzg/rs:fit:1000:1000:1/plain/images/products/1/2979/538594211/piko-500x500.jpg@jpg");
+        addDish("lemonads", "Киви-Лайм", "", "1л 1900₸", "https://chefburger.kz/image/cache/catalog/product2/Lemonade%20Kiwi%20Lime-800x800.jpg");
+        addDish("lemonads", "Манго-Маракуйя", "", "1л 1900₸", "ссылка на фото");
+        addDish("lemonads", "Манго-Ананас", "", "1л 1900₸", "ссылка на фото");
+        addDish("lemonads", "Лесные  ягоды", "", "1л 1900₸", "ссылка на фото");
+        addDish("tea", "Чай черный", "", "0,9л 600₸", "ссылка на фото");
+        addDish("tea", "Чай зелёный", "", "0,9л 600₸", "ссылка на фото");
         addDish("tea", "Чай Ташкенский", "", "0,9л 900₸", "https://static.wfolio.ru/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaAWSdBn6-atQ0_thDm1LxDJ/_tNpjoMifhYHRX644gmMnJNtN4-Yz7-a/FRulwmnWK1HosqT_A7nXWuPEmREhWAVp/1-jx1gW4SRbcuiQYoHsrQ81jOCm7hMh6/RwEXdsOj2FY.jpg");
         addDish("tea", "Чай Фруктовый", "", "0,9 1100₸", "ссылка на фото");
-        addDish("cocktails", "Мохито", "Безалкогольный", "900₸", "ссылка на фото");
-        addDish("cocktails", "Мохито Клубничный", "Безалкогольный", "900₸", "ссылка на фото");
-        addDish("cocktails", "Мохито", "Алкогольный", "2000₸", "ссылка на фото");
-        addDish("cocktails", "Маргарита Клубничная", "Концентрат Лимона, Текила, Куантра, Сироп", "2200₸", "ссылка на фото");
-        addDish("cocktails", "Секс на пляже", "Алкогольный", "2000₸", "ссылка на фото");
-        addDish("cocktails", "Текила Sunrise", "Апельсиновый сок, Сироп, Текила", "2000₸", "ссылка на фото");
-        addDish("cocktails", "Голубая логуна", "Спрайт, Блю кирасау, Ром(гавана)", "2000₸", "ссылка на фото");
-        addDish("cocktails", "Лонг Айленд", "Лайм, Гавана, Куантра, Водка, Малибу, Текила", "2200₸", "ссылка на фото");
-        addDish("cocktails", "В-52", "Калуа, Бейлис, Куантра", "2000₸", "ссылка на фото");
-        addDish("cocktails", "В-53", "Каула, Бейлис, Абцент", "2000₸", "ссылка на фото");
+        addDish("cocktails", "Мохито", "Безалкогольный", "1100₸", "ссылка на фото");
+        addDish("cocktails", "Мохито Клубничный", "Безалкогольный", "1100₸", "ссылка на фото");
+        addDish("cocktails", "Мохито", "Алкогольный", "2200₸", "ссылка на фото");
+        addDish("cocktails", "Маргарита Клубничная", "Концентрат Лимона, Текила, Куантра, Сироп", "2500₸", "ссылка на фото");
+        addDish("cocktails", "Секс на пляже", "Алкогольный", "2200₸", "ссылка на фото");
+        addDish("cocktails", "Текила Sunrise", "Апельсиновый сок, Сироп, Текила", "2200₸", "ссылка на фото");
+        addDish("cocktails", "Голубая логуна", "Спрайт, Блю кирасау, Ром(гавана)", "2200₸", "ссылка на фото");
+        addDish("cocktails", "Лонг Айленд", "Лайм, Гавана, Куантра, Водка, Малибу, Текила", "2500₸", "ссылка на фото");
+        addDish("cocktails", "В-52", "Калуа, Бейлис, Куантра", "2200₸", "ссылка на фото");
+        addDish("cocktails", "В-53", "Каула, Бейлис, Абцент", "2200₸", "ссылка на фото");
         addDish("vodka", "Белуга Премиум", "", "50мл 1800₸", "ссылка на фото");
         addDish("vodka", "Grey Goose", "", "50мл 1700₸", "ссылка на фото");
-        addDish("vodka", "Absolut Original", "", "50мл 900₸", "ссылка на фото");
-        addDish("vodka", "Русский Стандарт", "", "50мл 900₸", "ссылка на фото");
-        addDish("vodka", "Царская серебрянная", "50мл 900₸", "9000₸", "ссылка на фото");
-        addDish("vodka", "Архангельская", "", "50мл 480₸", "ссылка на фото");
-        addDish("vodka", "Столичная", "", "50мл 420₸", "ссылка на фото");
-        addDish("vodka", "Кызылжар", "", "50мл 420₸", "ссылка на фото");
-        addDish("congac", "Hennessy VS", "", "50мл 2000₸", "ссылка на фото");
-        addDish("congac", "Ararat 5*", "", "50мл 1000₸", "ссылка на фото");
-        addDish("congac", "Ararat 3*", "", "50мл 900₸", "ссылка на фото");
-        addDish("congac", "Казахстан 5*", "", "50мл 800₸", "ссылка на фото");
-        addDish("congac", "Казахстан 3*", "", "50мл 600₸", "ссылка на фото");
-        addDish("viski", "Chivas Regal 12 YO", "", "50мл 2200₸", "ссылка на фото");
-        addDish("viski", "Jameson Original", "", "50мл 1800₸", "ссылка на фото");
-        addDish("viski", "Dewar`s 8 YO", "", "50мл 1600₸", "ссылка на фото");
-        addDish("viski", "Jack Daniel`s", "", "50мл 1900₸", "ссылка на фото");
-        addDish("viski", "William Lawson`s", "", "50мл 1300₸", "ссылка на фото");
-        addDish("viski", "Ballantine`s Finest", "", "50мл 1400₸", "ссылка на фото");
-        addDish("tequila", "Olmeca Blanco", "", "50мл 1500₸", "ссылка на фото");
-        addDish("tequila", "Olmeca Gold", "", "50мл 1500₸", "ссылка на фото");
-        addDish("wines", "Martini Asti", "Игристое вино", "10500₸", "ссылка на фото");
-        addDish("wines", "Prosecco", "Игристое вино", "10500₸", "ссылка на фото");
+        addDish("vodka", "Absolut Original", "", "50мл 1000₸", "ссылка на фото");
+        addDish("vodka", "Русский Стандарт", "", "50мл 1000₸", "ссылка на фото");
+        addDish("vodka", "Царская серебрянная", "50мл 1000₸", "9000₸", "ссылка на фото");
+        addDish("vodka", "Архангельская", "", "50мл 550₸", "ссылка на фото");
+        addDish("vodka", "Столичная", "", "50мл 500₸", "ссылка на фото");
+        addDish("vodka", "Кызылжар", "", "50мл 500₸", "ссылка на фото");
+        addDish("congac", "Hennessy VS", "", "50мл 2500₸", "ссылка на фото");
+        addDish("congac", "Ararat 5*", "", "50мл 1100₸", "ссылка на фото");
+        addDish("congac", "Ararat 3*", "", "50мл 950₸", "ссылка на фото");
+        addDish("congac", "Казахстан 5*", "", "50мл 900₸", "ссылка на фото");
+        addDish("congac", "Казахстан 3*", "", "50мл 800₸", "ссылка на фото");
+        addDish("viski", "Chivas Regal 12 YO", "", "50мл 2500₸", "ссылка на фото");
+        addDish("viski", "Jameson Original", "", "50мл 2000₸", "ссылка на фото");
+        addDish("viski", "Dewar`s 8 YO", "", "50мл 1800₸", "ссылка на фото");
+        addDish("viski", "Jack Daniel`s", "", "50мл 2100₸", "ссылка на фото");
+        addDish("viski", "William Lawson`s", "", "50мл 1500₸", "ссылка на фото");
+        addDish("viski", "Ballantine`s Finest", "", "50мл 1600₸", "ссылка на фото");
+        addDish("tequila", "Olmeca Blanco", "", "50мл 1600₸", "ссылка на фото");
+        addDish("tequila", "Olmeca Gold", "", "50мл 1600₸", "ссылка на фото");
+        addDish("wines", "Martini Asti", "Игристое вино", "12000₸", "ссылка на фото");
+        addDish("wines", "Prosecco", "Игристое вино", "12000₸", "ссылка на фото");
         addDish("wines", "Советское шампанское", "Игристое вино", "4000₸", "ссылка на фото");
-        addDish("wines", "Киндзмараули", "Красное полусладкое", "7800₸", "ссылка на фото");
-        addDish("wines", "Алазанская долина", "Красное полусладкое", "4800₸", "ссылка на фото");
-        addDish("wines", "Саперави", "Красное сухое", "4800₸", "ссылка на фото");
-        addDish("wines", "Tavernello Amabile", "Белое полусладкое", "5600₸", "ссылка на фото");
-        addDish("wines", "Cuvee Speciale", "Белое полусладкое/сухое", "8400₸", "ссылка на фото");
+        addDish("wines", "Киндзмараули", "Красное полусладкое", "8100₸", "ссылка на фото");
+        addDish("wines", "Алазанская долина", "Красное полусладкое", "5000₸", "ссылка на фото");
+        addDish("wines", "Саперави", "Красное сухое", "5000₸", "ссылка на фото");
+        addDish("wines", "Tavernello Amabile", "Белое полусладкое", "5800₸", "ссылка на фото");
+        addDish("wines", "Cuvee Speciale", "Белое полусладкое/сухое", "9500₸", "ссылка на фото");
+        addDish("beer", "Разливное Praga", "", "750₸", "ссылка на фото");
+        addDish("beer", "Corona Extra", "", "2100₸", "ссылка на фото");
+        addDish("beer", "Miller", "", "1200₸", "ссылка на фото");
+        addDish("beer", "Kronenburg 1664 blanc", "", "900₸", "ссылка на фото");
+        addDish("beer", "Holsten pilsener/lite", "", "800₸", "ссылка на фото");
+        addDish("beer", "Сидр Somersby", "", "850₸", "ссылка на фото");
+        addDish("beer snacks", "Пивной сет(малый)", "Чечил, фисташки,арахис", "1850₸", "ссылка на фото");
+        addDish("beer snacks", "Пивной сет(Большой)", "Чипсы, наггетсы, кольца кальмара, гарлики, пивные креветки, охотничьи колбаски, соуса", "5500₸", "ссылка на фото");
+        addDish("beer snacks", "Курт", "3 штуки", "550₸", "ссылка на фото");
+        addDish("beer snacks", "Арахис 60гр", "", "550₸", "ссылка на фото");
+        addDish("beer snacks", "Гарлики", "", "600₸", "ссылка на фото");
+        addDish("beer snacks", "Чипсы", "", "600₸", "ссылка на фото");
+        addDish("beer snacks", "Фисташки", "", "800₸", "ссылка на фото");
+        addDish("beer snacks", "Пивные креветки", "", "2600₸", "ссылка на фото");
+        addDish("energetik", "Red Bull", "", "0.25мл 1250₸", "ссылка на фото");
+        addDish("energetik", "Flash", "", "650₸", "ссылка на фото");
+        addDish("rom", "Propeller", "", "50мл 1600₸", "ссылка на фото");
+        addDish("rom", "Havana Club", "", "50мл 1800₸", "ссылка на фото");
+        addDish("lighter", "Зажигалка", "", "300₸", "ссылка на фото");
+        addDish("sigarettes", "Сигареты в ассортименте", "", "1800₸", "ссылка на фото");
 
        
 
@@ -478,6 +513,12 @@
 
 <div class="service-fee">🔹 Обслуживание 15% 🔹</div>
 
+
+    
+
+
+</body>
+</html>
 
     
 
